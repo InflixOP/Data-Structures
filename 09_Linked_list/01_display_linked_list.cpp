@@ -15,15 +15,15 @@ void create(int A[],int n)
     first=new Node;
     first->data=A[0];
     first->next=NULL;
-    last=first;//addreess is passed and now first is refferd as last
+    last=first;
 
     for(int i=1;i<n;i++)
     {
         t=new Node;
         t->data=A[i];
         t->next=NULL;
-        last->next=t;//putting address of current node in the next of last node 
-        last=t;//assigning current node as last node
+        last->next=t; 
+        last=t;
     }
 }
 
